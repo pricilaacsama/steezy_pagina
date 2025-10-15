@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import NavbarSteezy from "./components/NavbarSteezy";
 import VideoGrid from "./components/VideoGrid";
 import './App.css'
@@ -7,7 +7,7 @@ function App() {
   const years = [2022, 2023, 2024, 2025];
 
   return (
-    <BrowserRouter>
+    <HashRouter> {/* <-- reemplaza BrowserRouter */}
       <NavbarSteezy/>
       <Routes>
         {years.map((y) => (
@@ -15,8 +15,8 @@ function App() {
         ))}
         <Route path="*" element={<Navigate to="/2025" />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
-export default App
+export default App;

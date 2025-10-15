@@ -2,8 +2,8 @@
   "name": "steezy-pagina",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://pricilaacsama.github.io/steezy_pagina",
   "type": "module",
+  "homepage": "https://pricilaacsama.github.io/steezy_pagina",
   "scripts": {
   "dev": "vite",
   "build": "vite build",
